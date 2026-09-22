@@ -1,69 +1,72 @@
-# macOS
+# =========================================================================
+# Agent Skills repository
+#
+# Tracked in git: SKILL.md, references/, assets/, scripts/ — the skill source.
+# Ignored: local agent/IDE state, OS noise, caches, secrets and temp output.
+# =========================================================================
+
+# --- OS noise ------------------------------------------------------------
 .DS_Store
 .AppleDouble
 .LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# Editor
+# --- Editors / IDEs ------------------------------------------------------
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# Node (in case future tooling lands)
-node_modules/
+# --- Local agent tooling state (machine-specific, never skill source) ----
+# Claude Code / Qoder / Cursor / Windsurf / Aider local config and caches.
+# Add an un-ignore rule (e.g. !.qoder/rules/) if a tool config should be shared.
+.claude/
+.agents/
+.qoder/
+.cursor/
+.windsurf/
+.aider*
+# Lockfile written by the `skills` CLI when skills are installed in-place.
+skills-lock.json
+# Project-scoped MCP config — often holds local paths / secrets.
+.mcp.json
+
+# --- Environment + secrets -----------------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- Logs / temp ---------------------------------------------------------
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+*.tmp
+*.bak
 
-# Build / temp
+# --- Node tooling (only relevant if a skill ships scripts) ---------------
+node_modules/
+.cache/
 dist/
 build/
-.cache/
-*.log
-.vercel
 
-# Environment + secrets
-.env
-.env.local
-.env.*.local
+# --- Python tooling (only relevant if a skill ships scripts) -------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
 
-# Generation pipeline artifacts (raw outputs before commit)
-.image-cache/
-
-# Runtime state from Hallmark's own runs (per-project log, never publish)
-.hallmark/
-
-# `skills` CLI install lockfile — generated whenever 'skills add' runs in this
-# directory, not part of the skill source.
-skills-lock.json
-.agents/
-
-# Local agent / preview tooling config (Claude Code, etc.) — not skill source
-.claude/
-
-# Launch-day comparison artifacts — one-off, not referenced from the marketing
-# site or README. Kept locally if useful.
-site/_launch-comparison/
-
-# Local example explorations — kept on disk, never published. The landing
-# carousel links only the featured builds (carnival-01, cobalt-01, custom-01–05,
-# hum-07, lumen-01); those stay tracked. Everything below is scratch: extra
-# generations, the private gallery/worked indexes, and component demos.
-site/examples/index.html
-site/examples/worked.html
-site/examples/lumen-index.html
-site/examples/_diagnostic.html
-site/examples/nav-demo/
-site/examples/hum-buttons/
-site/examples/gallery-0[12]/
-site/examples/carnival-0[2-9]/
-site/examples/cobalt-02/
-site/examples/hum-01/
-site/examples/hum-02/
-site/examples/hum-0[3-8]/
-!site/examples/hum-07/
-site/_tests/_thumbs/hum-02.jpg
-
-site/examples/lumen-0[2-4]/
+# --- Safety net: skill source must never be ignored ----------------------
+!**/SKILL.md
+!**/references/**
+!**/assets/**
+!**/scripts/**
