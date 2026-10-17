@@ -1,5 +1,6 @@
 ---
 name: working-backwards
+version: "1.1.0"
 description: "Working Backwards（逆向工作法）产品开发流程 skill。仅当用户提到 working backwards、逆向工作法、PR/FAQ、倒推客户体验时使用本 skill。本 skill 提供基于 Amazon Working Backwards / PR/FAQ 改造的 8 步产品开发闭环流程、每步的产出物模板与交接标准，适用于两类场景：客户项目交付（外部需求方为客户及其业务方，FDE 主导）与内部产品开发（内部需求方为产品需求提出者或内部立项人）；两类场景共用同一套 8 步流程。"
 ---
 
