@@ -1,6 +1,6 @@
 ---
 name: working-backwards
-description: "Working Backwards（逆向工作法）产品开发流程 skill。当用户要启动新产品/新项目/新功能开发、写 PRD/需求文档、设计 Mockup 原型、写技术设计文档、做任务拆解、开发实施总结、测试评估、发布、复盘，或提到 working backwards、逆向工作法、PR/FAQ、倒推客户体验时使用本 skill。本 skill 提供基于 Amazon Working Backwards / PR/FAQ 改造的 8 步产品开发闭环流程、每步的产出物模板与交接标准，适用于产品功能开发与客户项目交付（FDE 主导）场景。"
+description: "Working Backwards（逆向工作法）产品开发流程 skill。仅当用户提到 working backwards、逆向工作法、PR/FAQ、倒推客户体验时使用本 skill。本 skill 提供基于 Amazon Working Backwards / PR/FAQ 改造的 8 步产品开发闭环流程、每步的产出物模板与交接标准，适用于产品功能开发与客户项目交付（FDE 主导）场景。"
 ---
 
 # Working Backwards（逆向工作法）
@@ -16,11 +16,12 @@ AI 时代通用能力太强，「该做什么」比「怎么做」更难——�
 
 ## 何时使用
 
-- 启动新产品、新功能、新客户项目的开发
-- 撰写或评审 PRD、PR/FAQ、Mockup UI、技术设计文档、任务列表
-- 做实施总结、测试评估、发布、迭代复盘
-- 客户诉求模糊（如「我们要 AI 原生解决方案」）需要倒推具体场景时
-- 判断一个 idea 值不值得做
+仅在以下情况使用本 skill：
+
+- 用户提到 working backwards、逆向工作法、PR/FAQ、倒推客户体验
+- 用户明确要求按 Working Backwards 方法启动或推进产品/项目
+
+已在本流程中的项目，按当前步骤继续即可，无需重新触发。
 
 ## 8 步产品开发闭环
 
