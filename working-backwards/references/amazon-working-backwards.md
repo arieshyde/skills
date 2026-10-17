@@ -1,16 +1,16 @@
 # Amazon《Working Backwards》公开方法论速查
 
-> 整理自 Colin Bryar & Bill Carr《Working Backwards: Insights, Stories, and Secrets from Inside Amazon》（2021，中译《逆向工作法》）及作者官网 workingbackwards.com、AWS re:Invent 公开演讲、作者公开访谈等公开资料。全部为公开内容，供 framework.md 按需引用。两位作者合计 27 年 Amazon 高管经历，Bryar 曾担任贝索斯的「shadow」（技术顾问）两年。
+> 整理自 Colin Bryar & Bill Carr《Working Backwards: Insights, Stories, and Secrets from Inside Amazon》（2021，中译《逆向工作法》）及作者官网 workingbackwards.com、AWS re:Invent 公开演讲、作者公开访谈等公开资料。全部为公开内容，供 SKILL.md 与 framework.md 按需引用。两位作者合计 27 年 Amazon 高管经历，Bryar 曾担任贝索斯的「shadow」（技术顾问）两年。
 
 ## 一、总体框架：六大核心机制
 
 全书主旨：Amazon 的成功不依赖个人天才或良好意愿，而依赖一组定义清晰、被严格执行的机制——「good intentions don't work, mechanisms work」。Part I（Being Amazonian）给出六大机制：
 
-1. **领导力准则（Leadership Principles）**：14 条，「客户至上」居首。准则必须被编纂并落成可执行的机制，而不是墙上标语。
-2. **Bar Raiser 招聘机制**：每轮面试设一名不属于招聘团队的「抬杠者」，拥有绝对否决权，激励与招聘经理解耦；确保每个新人高于团队平均水准，招聘紧迫性永不压倒人才标准。
+1. **领导力准则（Leadership Principles）**：书中为 14 条（Amazon 后续增至 16 条），「客户至上」居首。准则必须被编纂并落成可执行的机制，而不是墙上标语。
+2. **Bar Raiser 招聘机制**：每个招聘流程设一名不属于招聘团队的「把关人」（Bar Raiser），拥有绝对否决权，激励与招聘经理解耦；确保每个新人高于团队平均水准，招聘紧迫性永不压倒人才标准。
 3. **单线程负责人（Single-Threaded Leader, STL）**：项目由单一负责人全权拥有、心无旁骛，不被其他工作分心；配合小团队保证迭代循环转得快。
 4. **叙事文档（Narrative）**：用书面叙事文档（典型为六页纸）替代 PPT 讨论复杂话题，倒逼写作者与读者深度思考。
-5. **逆向工作法（Working Backwards / PR-FAQ）**：产品开发从模拟发布日的新闻稿开始，见第二节。
+5. **逆向工作法（Working Backwards / PR/FAQ）**：产品开发从模拟发布日的新闻稿开始，见第二节。
 6. **可控输入指标（Controllable Input Metrics）**：管理输入而非输出，见第四节。
 
 ## 二、PR/FAQ：逆向工作法流程
@@ -24,32 +24,31 @@
 
 ### 新闻稿（Press Release）
 
-- 一页以内（整份 PR/FAQ 文档约六页）
-- 模拟产品发布当天的真实新闻稿
+- 模拟产品发布当天的新闻稿
 - 结构要素：标题（一句话说清是什么）、副标题（目标客户与核心利益）、概述（是什么、给谁、为什么是现在）、问题（客户当前痛点）、解决方案与关键能力（描述体验而非实现）、客户引语、行动号召 / 上手方式（getting started）
 
 ### FAQ
 
 - **外部 FAQ**（客户与媒体视角）：怎么用、价格、保修与退换政策、哪里购买、如何获得支持；用客户听得懂的语言，禁企业黑话
 - **内部 FAQ**（高管视角）：客户今天用什么方案解决该问题、产品解决什么问题、市场多大、为何定这个价、是否盈利、对其他团队的影响、依赖项、所需资源（人、钱、固定投入）与粗略时间线、最大风险、用什么指标判断成败（输入指标优先）、不做什么
-- 篇幅纪律：新闻稿少于一页、FAQ 不超过五页——篇幅限制是强制思考的工具
+- 篇幅纪律（书中标准）：新闻稿少于一页、FAQ 不超过五页，整份文档约六页——篇幅限制是强制思考的工具
 
-### 五问（起草前必答）
+### 五问（起草前先回答）
 
 AWS 公开材料（如 re:Invent 2020 创新专场）建议起草 PR/FAQ 前先回答「五问」，聚焦：目标客户是谁、客户问题/机会是什么、价值主张为何令人兴奋、如何度量成功等；这五问答不清楚，说明还不到写 PR/FAQ 的时候。
 
 ### 评审循环
 
 - 静默阅读：会议开始先默读文档，不做口头宣讲
-- 逐段质询：line-by-line 批注，把分歧摆上桌面辩论；答不上来的问题追加进文档，约定两周后复审
+- 逐段质询：line-by-line 批注，把分歧摆上桌面辩论；答不上来的问题追加进文档，另约时间复审（如两周后）
 - 资深者最后发言：避免先入为主锚定讨论
 - 多稿迭代：实践中常需 10 稿以上、与高层 5 次以上评审会；每轮辩论后回改新闻稿
 - 用故事板 / 技术图示辅助把分歧具象化
 
-### go / no-go 决策与立项后跟进
+### go/no-go 决策与立项后跟进
 
-- 文档成熟到一定程度即做 go / no-go 决策
-- go 之后，FAQ 中写明的资源、粗略时间线与运营事项即为执行基线；高管按周或按月 review 跟进新团队
+- 文档成熟到一定程度即做 go/no-go 决策
+- go 之后，FAQ 中写明的资源、粗略时间线与运营事项即为执行基线；高管按周或按月评审跟进新团队
 - no-go 则视原因补材料再审，或搁置、终止
 
 ## 三、叙事文档与六页纸会议规则
@@ -62,17 +61,17 @@ AWS 公开材料（如 re:Invent 2020 创新专场）建议起草 PR/FAQ 前先�
 
 ## 四、输入指标与 WBR
 
-- Output Metrics 显示结果（营收、股价、份额），Input Metrics 提供指引；产出不可直接控制，能管理的是可控输入
+- 输出指标（Output Metrics）显示结果（营收、股价、份额），输入指标（Input Metrics）提供指引；产出不可直接控制，能管理的是可控输入
 - WBR（Weekly Business Review）：每周固定节奏评审数据，遵循六西格玛 DMAIC 顺序（Define、Measure、Analyze、Improve、Control），顺序不能乱；在数据中找趋势与异常，对异常深挖到底
 - 数据下钻与客户轶事（anecdote）双通道结合，避免只见数字不见体验
 - 输入指标最终驱动增长飞轮（以零售为例：更低成本结构带来更低价格，更好客户体验带来更多流量，进而吸引更多卖家与更丰富选品，形成规模并进一步降低成本）
 
-### 决策分类：单向门与双向门
+## 五、决策分类：单向门与双向门
 
 - 单向门（不可逆或几乎不可逆的决策）：必须慢、审慎、充分咨询后决定
 - 双向门（可逆决策）：授权下放、快速决定，不要用重流程拖延
 
-## 五、经典案例（公开）
+## 六、经典案例（公开）
 
 | 案例 | 背景 | 逆向假设 | 关键决策 | 结果 |
 |---|---|---|---|---|
@@ -82,16 +81,16 @@ AWS 公开材料（如 re:Invent 2020 创新专场）建议起草 PR/FAQ 前先�
 
 另一公开例证：2014 年内部 PR/FAQ《A Pharmacy in Your Mailbox》（Amazon Pharmacy 的先导概念文档），体现「先写新闻稿、再做产品」。
 
-## 六、与本技能 8 步流程的映射
+## 七、与本技能 8 步流程的映射
 
-- 模板 `00-pr-faq.md` 对应 PR/FAQ 文档；其「评审记录表」对应静默阅读、逐段质询、多稿修订的评审循环
+- 模板 `templates/00-pr-faq.md` 对应 PR/FAQ 文档；其「评审记录表」对应静默阅读、逐段质询、多稿修订的评审循环
 - Step 1 的 PRD 是 PR/FAQ 的工程化简化变体
-- Step 6 测试报告的「输入指标优先」与 Step 8 复盘的指标检验，对应输入指标与 WBR 思想
-- 8 步流程的各交接标准，是 go/no-go 决策点在本技能中的具体化
+- Step 6 的量化评估与 Step 8 的指标检验，对应输入指标与 WBR 思想
+- 8 步流程的各交接标准，可视为各阶段 go/no-go 决策点的具体化
 
 ## 来源
 
 - Colin Bryar & Bill Carr,《Working Backwards: Insights, Stories, and Secrets from Inside Amazon》, St. Martin's Press, 2021
 - workingbackwards.com（作者官网）：concepts/working-backwards-pr-faq-process
 - AWS re:Invent 2020 公开演讲：Working backwards — Amazon's approach to innovation
-- a16z 播客第 171 期（作者访谈）；commoncog.com 等公开书评（交叉参照）
+- 作者公开访谈（a16z Podcast 等）；commoncog.com 等公开书评（交叉参照）
