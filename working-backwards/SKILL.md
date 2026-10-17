@@ -44,12 +44,12 @@ AI 时代通用能力太强，「该做什么」比「怎么做」更难——�
 
 先确认用户当前处于哪一步、已有哪些产出物，再从对应步骤切入，不要每次都从 Step 1 重来。
 
-- 模糊立项（愿景宏大但缺具体场景）→ 先写独立 PR/FAQ（见 `assets/templates/00-pr-faq.md`），再落 PRD
+- 模糊立项（愿景宏大但缺具体场景）→ 先写独立 PR/FAQ（见 `templates/00-pr-faq.md`），再落 PRD
 - 明确需求 → 直接从 PRD 开始
 
 ### 2. 按步骤执行，产出对应文档
 
-每一步的详细方法与常见错误见 `references/framework.md`；Amazon 原书公开方法论详解见 `references/amazon-working-backwards.md`。产出物一律使用 `assets/templates/` 下的对应模板：
+每一步的详细方法与常见错误见 `references/framework.md`；Amazon 原书公开方法论详解见 `references/amazon-working-backwards.md`。产出物一律使用 `templates/` 下的对应模板：
 
 - `00-pr-faq.md` — 模糊立项时的 PR/FAQ（新闻稿 + 内外部 FAQ）
 - `01-prd.md` — 产品需求文档（含范围边界、非目标、需求溯源）
@@ -87,4 +87,4 @@ AI 时代通用能力太强，「该做什么」比「怎么做」更难——�
 
 - `references/framework.md` — 8 步流程详解：每步的目的、产出物、关键问题与提醒，以及 PR/FAQ 方法
 - `references/amazon-working-backwards.md` — Amazon《Working Backwards》公开方法论速查：六大核心机制、PR/FAQ 流程与评审循环、输入指标与 WBR、六页纸叙事会议规则、经典案例（AWS/Kindle/Prime）
-- `assets/templates/` — 9 份可直接复制使用的文档模板（00 PR/FAQ + 8 步各一份）
+- `templates/` — 9 份可直接复制使用的文档模板（00 PR/FAQ + 8 步各一份）
