@@ -32,7 +32,7 @@ AWS、Kindle、Prime 三个公开案例的详表见同目录 `amazon-working-bac
 - 定位：PRD 可视为 PR/FAQ 的工程化简化版；模糊立项先写独立 PR/FAQ（模板 `templates/00-pr-faq.md`，方法见 `amazon-working-backwards.md` 第二节）
 - 实践要点：需求可溯源到需求方输入（客户会议原文、工单、访谈记录，或内部立项材料、需求单），痛点→模块保留可追溯映射
 
-### Step 2 — 原型设计（UI / 服务）｜Business+FDE
+### Step 2 — 原型设计（UI/服务）｜Business+FDE
 
 - 目的：有界面项目用可点击原型验证交互与信息架构；无界面项目用服务契约原型验证接口、输入输出与能力指标；均不锁定技术实现
 - 产出物：有界面项目为静态 HTML 原型（本地安装软件可补充 Figma）+ 设计说明；无界面项目为服务/模型原型（`templates/02b-service-prototype.md`）
