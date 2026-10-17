@@ -1,6 +1,6 @@
 ---
 name: working-backwards
-description: "Working Backwards（逆向工作法）产品开发流程 skill。当用户要启动新产品/新项目/新功能开发、写 PRD/需求文档、设计 Mockup 原型、写技术设计文档、做任务拆解、开发实施总结、测试评估、发布、复盘，或提到 working backwards、逆向工作法、PR/FAQ、倒推客户体验时使用本 skill。本 skill 提供团队基于 Amazon Working Backwards / PR-FAQ 改造的 8 步产品开发闭环流程、每步的产出物模板与交接标准，覆盖产品功能开发与客户项目交付（FDE 主导）两条线。"
+description: "Working Backwards（逆向工作法）产品开发流程 skill。当用户要启动新产品/新项目/新功能开发、写 PRD/需求文档、设计 Mockup 原型、写技术设计文档、做任务拆解、开发实施总结、测试评估、发布、复盘，或提到 working backwards、逆向工作法、PR/FAQ、倒推客户体验时使用本 skill。本 skill 提供基于 Amazon Working Backwards / PR-FAQ 改造的 8 步产品开发闭环流程、每步的产出物模板与交接标准，覆盖产品功能开发与客户项目交付（FDE 主导）两条线。"
 agent_created: true
 ---
 
@@ -49,7 +49,7 @@ AI 时代通用能力太强，「该做什么」比「怎么做」更难——�
 
 ### 2. 按步骤执行，产出对应文档
 
-每一步的详细方法、常见错误与内部案例教训见 `references/framework.md`。产出物一律使用 `assets/templates/` 下的对应模板：
+每一步的详细方法与常见错误见 `references/framework.md`；Amazon 原书公开方法论详解见 `references/amazon-working-backwards.md`。产出物一律使用 `assets/templates/` 下的对应模板：
 
 - `00-pr-faq.md` — 模糊立项时的 PR/FAQ（新闻稿 + 内外部 FAQ）
 - `01-prd.md` — 产品需求文档（含范围边界、非目标、需求溯源）
@@ -85,5 +85,6 @@ AI 时代通用能力太强，「该做什么」比「怎么做」更难——�
 
 ## Resources
 
-- `references/framework.md` — 8 步流程详解：每步的目的、产出物、关键问题、内部案例教训，以及 PR/FAQ 方法与 Amazon 经典案例（AWS/Kindle/Prime）
+- `references/framework.md` — 8 步流程详解：每步的目的、产出物、关键问题与提醒，以及 PR/FAQ 方法
+- `references/amazon-working-backwards.md` — Amazon《Working Backwards》公开方法论速查：六大核心机制、PR/FAQ 流程与评审循环、输入指标与 WBR、六页纸叙事会议规则、经典案例（AWS/Kindle/Prime）
 - `assets/templates/` — 9 份可直接复制使用的文档模板（00 PR/FAQ + 8 步各一份）
