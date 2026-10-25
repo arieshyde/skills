@@ -17,7 +17,7 @@
 
 ### 触发与定位
 
-- 任何人提出新想法，管理者的第一反应是「去写一份 working-backwards document」：先写新闻稿与 FAQ，再谈立项——这是 Amazon 版本的 PRD
+- 任何人提出新想法，管理者的第一反应是「去写一份 working-backwards document」：先写新闻稿与 FAQ，再谈立项——PR/FAQ 用于产品构思与评审，不能据此认定 Amazon 统一要求再写独立 PRD
 - 新闻稿是「forcing function」：强制提案人站在客户视角；写好的标准是客户读完想说「Wow, I want that」
 - PR/FAQ 用于新产品开发的最前端；获批后可衔接敏捷开发执行——两者不冲突，Amazon 常配合使用
 - Kindle、Prime、AWS 都经此流程打磨并立项
@@ -84,13 +84,15 @@ AWS 公开材料（如 re:Invent 2020 创新专场）建议起草 PR/FAQ 前先�
 ## 七、与本技能 8 步流程的映射
 
 - 模板 `templates/00-pr-faq.md` 对应 PR/FAQ 文档；其「评审记录表」对应静默阅读、逐段质询、多稿修订的评审循环
-- Step 1 的 PRD 是 PR/FAQ 的工程化简化变体
+- Step 1 区分产品定义与需求规格化：PRD 明确目标及范围，需求规格与系统功能清单支撑原型；Step 3 联合开展技术设计、估算与项目规划
+- 上述 8 步、文档组合与交接标准是本 skill 结合需求工程和项目管理实践的改造，不是原书规定的固定顺序；Amazon 公开资料明确 PR/FAQ 获批后可接敏捷开发
 - Step 6 的量化评估与 Step 8 的指标检验，对应输入指标与 WBR 思想
 - 8 步流程的各交接标准，可视为各阶段 go/no-go 决策点的具体化
 
 ## 来源
 
 - Colin Bryar & Bill Carr,《Working Backwards: Insights, Stories, and Secrets from Inside Amazon》, St. Martin's Press, 2021
-- workingbackwards.com（作者官网）：concepts/working-backwards-pr-faq-process
+- [作者官网：PR/FAQ 流程、决策与敏捷开发衔接](https://workingbackwards.com/resources/working-backwards-pr-faq/)
+- [Amazon 刊登的原书节选：评审、投入决策与活文档](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)
 - AWS re:Invent 2020 公开演讲：Working backwards — Amazon's approach to innovation
 - 作者公开访谈（a16z Podcast 等）；commoncog.com 等公开书评（交叉参照）
